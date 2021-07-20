@@ -1,6 +1,7 @@
 [Function]
 ```
-Defines a Node; A Python Thread wrapper. Within the thread, a module is loaded, and basic functions are provided such as exception handling, live reload, and shared memory.
+Defines a Node; A Python Thread wrapper. Within the thread, a module is loaded,
+and basic functions are provided such as exception handling, live reload, and shared memory.
 ```
 
 
