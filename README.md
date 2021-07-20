@@ -1,9 +1,9 @@
 [Function]
-`Defines a Node; A Python Thread wrapper. Within the thread, a module is loaded, and basic functions are provided such as exception handling, live reload, and shared memory.`
+```Defines a Node; A Python Thread wrapper. Within the thread, a module is loaded, and basic functions are provided such as exception handling, live reload, and shared memory.```
 
 
 [Python Module Setup]
-`git clone https://github.com/BiatuAutMiahn/Infinity.Init Infinity`
+```git clone https://github.com/BiatuAutMiahn/Infinity.Init Infinity```
 
 
 [Example.py]
