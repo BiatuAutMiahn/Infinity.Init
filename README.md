@@ -39,7 +39,7 @@ def __reinit__(self):
   pass
 
 # Called before node is terminated
-def __deinit__(self)
+def __deinit__(self):
   pass
   
 # Called at intervals; default is 0.1s
