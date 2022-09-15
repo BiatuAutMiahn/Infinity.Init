@@ -39,7 +39,7 @@ class Node(threading.Thread):
         ps1=sys.ps1
         ps2=sys.ps2
         sys.ps1='['+self.name+']>>> '
-        sys.ps1='['+self.name+']... '
+        sys.ps2='['+self.name+']... '
         vars=dict(globals(), **locals())
         readline.set_completer(rlcompleter.Completer(vars).complete)
         readline.parse_and_bind("tab:complete")
@@ -171,7 +171,7 @@ class Init():
         if hasattr(sys,'ps2'):
             ps2=sys.ps2
         sys.ps1='['+self.name+']>>> '
-        sys.ps1='['+self.name+']... '
+        sys.ps2='['+self.name+']... '
         vars=dict(globals(), **locals())
         readline.set_completer(rlcompleter.Completer(vars).complete)
         readline.parse_and_bind("tab:complete")
@@ -187,7 +187,7 @@ class Init():
         logging.info("[Init]:\tPID: %d"%self.pid)
         logging.basicConfig(format='[%(asctime)s.%(msecs)03d]%(message)s',level=logging.DEBUG,datefmt="%Y.%m.%d,%H:%M:%S")
         logging.info("[Init]:\tInitializing")
-        psutil.Process(os.getpid()).nice(-2)
+        #psutil.Process(os.getpid()).nice(-2)
         if os.path.exists(self.pidfile):
             if not os.path.isfile(self.pidfile):
                 logging.error("[Init]:\tPID file is Corrupt, Exiting")
